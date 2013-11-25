@@ -23,7 +23,7 @@ cd grouper-test
 vagrant up
 vagrant ssh
 
-# Download java sdk from [here](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
+# Download java sdk from here: http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
 
 # Install java sdk
 rpm -Uvh jdk-7u45-linux-x64.rpm
@@ -53,7 +53,7 @@ curl -v \
 	-d '{ "WsRestFindGroupsRequest": { "actAsSubjectLookup": { "subjectId":"GrouperSystem" }, "wsQueryFilter": { "groupName":"student", "queryFilterType":"FIND_BY_GROUP_NAME_APPROXIMATE" } } }' \
 	-X POST http://localhost:8080/grouper-ws/servicesRest/json/v2_1_5/groups 
 
-# Examples are provided [here](http://anonsvn.internet2.edu/viewvc/viewvc.py/i2mi/trunk/grouper-ws/grouper-ws/doc/samples/findGroups/)
+# Examples are provided here: http://anonsvn.internet2.edu/viewvc/viewvc.py/i2mi/trunk/grouper-ws/grouper-ws/doc/samples/findGroups/
 ```
 
 ### Useful links
