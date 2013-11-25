@@ -56,6 +56,17 @@ curl -v \
 # Examples are provided here: http://anonsvn.internet2.edu/viewvc/viewvc.py/i2mi/trunk/grouper-ws/grouper-ws/doc/samples/findGroups/
 ```
 
+### Restarting grouper
+```
+cd /home/vagrant # location where grouper was installed
+
+# restart grouper
+sudo java -cp grouper.apiBinary-2.1.5/lib/jdbcSamples/hsqldb.jar org.hsqldb.Server -database.0 file:grouper.apiBinary-2.1.5/grouper -dbname.0 grouper &
+
+# restart tomcat
+sudo ./apache-tomcat-6.0.35/bin/startup.sh 
+```
+
 ### Useful links
 
 * [Grouper Web Services](https://spaces.internet2.edu/display/Grouper/Grouper+Web+Services)
