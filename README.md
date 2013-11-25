@@ -32,7 +32,7 @@ rpm -Uvh jdk-7u45-linux-x64.rpm
 wget http://software.internet2.edu/grouper/release/2.1.5/grouper.installer-2.1.5.tar.gz
 java -jar grouperInstaller.jar
 
-# NOTE: Pay attention to the output if you need to restart the grouper and the tomcat server
+# NOTE: Pay attention to the output if you need to restart grouper and the tomcat server
 
 # Use default settings during installation
 ```
